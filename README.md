@@ -1,16 +1,14 @@
-# 通信品質と視覚最適化を両立した超解像による動画配信システム
+# 2025年度の修士の実験コード
 
 **Introduction**
-
-2024年度の卒業研究のコードです。
-DQNによって学習を行います。
+ここに紹介
 
 
 **Installation**
 
 1. **リポジトリのクローン方法:**
    ```bash
-   git clone https://github.com/maeshu0619/graduation_experiment2024.git
+   リポジトリのURL
    ```
    
 2. **ライブラリのダウンロード:**
@@ -20,7 +18,7 @@ DQNによって学習を行います。
     ```
    
 **トレーニング方法**
-ターミナル上でpython train.py --mode 0 --late 15 --net 0の様に入力してください
+ターミナル上でpython train.py --mode 0 --late 15 --net 0の様に入力してください。
 
 mode:
     0: ABRのトレーニングを行います
