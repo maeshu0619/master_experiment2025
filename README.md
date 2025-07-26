@@ -10,7 +10,7 @@ DQNによって学習を行います。
 
 1. **リポジトリのクローン方法:**
    ```bash
-   git clone https://github.com/maeshu0619/graduation_experiment2024.git
+   git clone https://github.com/maeshu0619/master_experiment2025.git
    ```
    
 2. **ライブラリのダウンロード:**
