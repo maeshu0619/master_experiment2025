@@ -16,11 +16,15 @@ class TimeTracker:
         print("計測終了")
 
     def elapsed(self):
-        """経過時間を返す"""
-        if self.start_time is None or self.end_time is None:
-            raise ValueError("計測が開始されていません。start()を呼び出してください。")
+        if self.start_time is None:
+            return None
+        if self.end_time is None:
+            return time.time() - self.start_time  # 計測中の場合
         return self.end_time - self.start_time
-    
-    def print_elapsed(self):
-        """経過時間を表示"""
-        print(f"経過時間: {self.end_time:.2f} - {self.start_time:.2f}秒")
+
+    def print_elapsed(self, str):
+        if self.start_time is None:
+            print("計測が開始されていません。")
+            return
+        elapsed_time = self.elapsed()
+        print(f"{str}: {elapsed_time:.2f} 秒")
