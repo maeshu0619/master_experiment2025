@@ -65,31 +65,3 @@ def convert_off_to_pcd(input_path, output_path):
     
 # 変換実行
 convert_off_to_pcd(input_files, output_file)
-
-"""
-# OFFファイル読み込み
-with open(input_off, 'r') as f:
-    lines = f.readlines()
-
-if lines[0].strip() != "OFF":
-    raise ValueError("OFF形式のファイルではありません")
-
-# 頂点数と面数
-n_vertices, n_faces, _ = map(int, lines[1].strip().split())
-
-# 頂点座標の読み込み
-vertices = np.array([list(map(float, line.strip().split())) for line in lines[2:2 + n_vertices]])
-
-print(f"頂点数: {n_vertices}, 読み込んだ点数: {vertices.shape}")
-
-# 点群をOpen3Dオブジェクトに変換
-pcd = o3d.geometry.PointCloud()
-pcd.points = o3d.utility.Vector3dVector(vertices)
-
-# PCDをASCII形式で保存
-o3d.io.write_point_cloud(output_pcd, pcd, write_ascii=True)
-print(f"PCDファイルをASCIIで保存しました: {output_pcd}")
-
-# 可視化
-o3d.visualization.draw_geometries([pcd])
-"""
