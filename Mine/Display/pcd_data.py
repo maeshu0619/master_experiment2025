@@ -3,7 +3,7 @@ import open3d as o3d
 import numpy as np
 import os
 
-input_path = r"F:\Experiments\MasterEx\down_data\partial_voxel_fps.pcd"
+input_path = "./augmented_dolphin.pcd"
 
 class DisplayPCD:
     def __init__(self, input_path):
