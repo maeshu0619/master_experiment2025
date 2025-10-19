@@ -1,3 +1,12 @@
+
+env
+*.xyz
+.vscode
+pcd-dataset
+
+##############################################
+# RepKPU
+##############################################
 # Build and Release Folders
 bin-debug/
 bin-release/
@@ -15,11 +24,19 @@ __pycache__/
 *.apk
 .DS_Store
 
-env
-.vscode
-pcd-dataset
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
-
+##############################################
+# OctAttention
+##############################################
+*.pyc
+*.bak
+*.npz
+*.out
+*.log
+*/__pycache__
+__pycache__
+/.idea
+/.*
+/log
+/Exp
+/Data
+/temp
